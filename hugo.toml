@@ -1,4 +1,21 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ralfwirdemann.de/'
 languageCode = 'en-us'
 title = 'Ralf Wirdemann'
 theme = 'PaperMod'
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Articles"
+url = "articles"
+weight = 5
+[[languages.en.menu.main]]
+name = "Books"
+url = "books"
+weight = 5
+[[languages.en.menu.main]]
+name = "Projects"
+url = "projects"
+weight = 5
