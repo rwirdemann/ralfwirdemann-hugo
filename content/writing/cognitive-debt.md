@@ -1,0 +1,9 @@
++++
+date = '2026-02-14T07:42:33+01:00'
+draft = false
+title = 'Kognitive Schulden = intellektuelle Faulheit?'
++++
+
+Martin Fowler hat in einem seiner letzten [Fragmente](https://martinfowler.com/fragments/2026-02-13.html) den Begriff der **kognitiven Schulden** im Kontext der LLM-basierten Entwicklung erwähnt. Anders als technische Schulden manifestieren sich kognitive Schulden nicht nur in schlecht wartbaren Sourcecode, sondern in einem zunehmenden Unverständnis der Entwickler:innen, wie verschiedene Teile des Systems zusammenarbeiten, sowie der Unfähigkeit, Design-Entscheidungen zu begründen. Informatik-Professorin Margaret-Anne Storey schreibt in ihrem [Blog](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/), dass ihre Studierenden nach 7-8 Wochen LLM-basierter Entwicklung nicht mehr in der Lage waren, selbst einfache Änderungen vorzunehmen, ohne dabei etwas kaputt zu machen.  
+  
+Neben dem Nicht-Verstehen des von LLMs generierten Sourcecodes beinhaltet die Metapher der kognitiven Schulden einen weiteren Aspekt: **Intellektuelle Faulheit**. Ich verstehe darunter das Vermeiden intellektueller Anstrengung durch das Delegieren von Coding-Tasks an LLMs. Selbst wenn die Kontrolle über Design und Architektur des Systems behalten wird, müssen einzelne Funktionen am Ende programmiert werden. Hierbei ertappe ich mich häufiger dabei, nur noch die Signatur einer Funktion zu schreiben und das Ausprogrammieren einem LLM zu überlassen. Der generierte Code ist i.d.R. von guter Qualität und aufgrund des schrittweisen Vorgehens gut zu reviewen. Ich nehme diese Arbeitsweise als Produktivitäts-Boost wahr, ohne dabei die Kontrolle über das System zu verlieren. Dennoch empfinde ich in diesem Modus die erwähnte intellektuelle Faulheit und frage mich, was die dafür zu zahlenden Zinsen im Sinne der eingegangenen kognitiven Schuld sind? Anders formuliert: Laufen wir Gefahr, dass wir durch den zunehmenden Einsatz von LLMs das Denken verlernen?  
