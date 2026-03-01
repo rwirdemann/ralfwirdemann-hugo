@@ -9,3 +9,5 @@ I am a software developer based in Hamburg. Currently, I specialize in embedded 
 I am one of the founders of [CodeKeepers GmbH](https://codekeepers.de), a company that is specialized in analyzing, maintaining, and modernizing legacy software.
 
 Apart from work, I am a wingfoiler, spending my weekends in search of wind and waves at the Baltic Sea and Denmark.
+
+#### Latest Posts
