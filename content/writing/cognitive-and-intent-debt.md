@@ -1,0 +1,19 @@
++++
+date = '2026-04-10T07:42:33+01:00'
+draft = false
+title = 'Cognitive Debt and Intent Debt'
++++
+
+In ihrem Paper [From Technical Debt to Cognitive and Intent Debt](https://arxiv.org/abs/2603.22106) untersucht Informatikprofessorin Margaret-Anne Storey verschiedene Arten von Schulden im Kontext AI-getriebener Software-Entwicklung. Neben den seit mehr als 30 Jahren bekannten technischen Schulden identifiziert sie zwei weitere Schuldenarten: kognitive Schulden und Absichtsschulden (engl. cognitive und intent debt).  
+  
+Kognitive Schulden beschreiben den Verlust bzw. das Erodieren des mentalen Modells eines Softwaresystems. Jemand, der das mentale Modell eines Softwaresystems kennt, kann intuitiv erklären, wie etwas gebaut ist, und warum es so gebaut wurde. Er oder sie kann technische Entscheidungen begründen und verteidigen. Er kann recht sicher vorhersagen, wie sich Änderungen am System auswirken. Kognitive Schulden leben in den Köpfen der Entwickelnden.  
+  
+Absichtsschulden sind das nicht Vorhandensein bzw. Erodieren von expliziten Regeln / Begründungen, Zielen und Guidelines für die Weiterentwicklung des Systems. Beispiele für Absichtsschulden sind das Fehlen von ADRs, Spezifikationen oder dokumentiertes Domain-Wissen. Absichtsschulden leben in den Nicht-Code-Artefakten des Softwaresystems, wie Dokumentation, Wikis oder BDD-Specs.  
+  
+Technische Schulden verlieren im Kontext AI-getriebener Entwicklung an Bedeutung. Zum einen sind sie im Gegensatz zu den beiden anderen Schuldenarten sichtbar und damit gut managebar. Zum anderen sorgt eine gut instruierte AI eigenständig für die Reduzierung technischer Schulden. Beispiele dafür sind automatisierte Reviews, Identifikation von Code- und Architektur-Smells oder automatisierte Refactorings.
+  
+Auf der anderen Seite gewinnen kognitive und Absichtsschulden in der AI-Software-Entwicklung an Bedeutung. LLMs generieren sehr viel schneller Code, als dass dieser gelesen werden kann. Was häufig dazu führt, dass wir Code - idealerweise automatisiert gereviewed - durchwinken, ohne ihn genau verstanden zu haben. Dieses Vorgehen führt schnell zu einem Erodieren des mentalen Modells in den Köpfen der Entwickelnden. Der Verlust führt dazu, dass wir uns immer seltener trauen Änderungen vorzunehmen, da uns der Überblick fehlt, und wir Seiteneffekte nicht mehr sicher abschätzen können. Die Situation führt zu einer Erhöhung des Stresslevel und verursacht Hilflosigkeit, insbesondere dann, wenn die AI ein Problem nicht eigenständig lösen kann.  
+  
+Absichtsschulden beziehen sich auf zentrale Artefakte, die den Rahmen der Weiterentwicklung vorgeben. Tatsächlich sehe ich das Entstehen von Absichtsschulden weniger kritisch als Margaret-Anne Storey. Letztendlich sind es genau die Nicht-Code-Artefakte, die ein LLM zum Arbeiten braucht. Es etablieren sich zunehmend Strukturen und Vorgehensweisen wie Skills, spezialisierte Sub-Agents oder Spec-driven Development, die ein LLM mit genau diesen Artefakten versorgen. Während z.B. ADRs auch im Pre-AI-Zeitalter wichtig waren, sind sie heute umso wichtiger. ADRs beschreiben nicht nur, warum etwas entschieden wurde, sondern durch den Einsatz von LLMs wird darüber hinaus dafür gesorgt, dass sie eingehalten bzw. umgesetzt werden.
+  
+Aus meiner Sicht sollte ein Fokus der AI-getriebenen Entwicklung auf dem Management von kognitiven Schulden liegen. Systemverständnis sollte, genau wie das Binary, zu einem Deliverable des Prozesses werden. Es ist keine gute Idee, dieses Verständnis ausschließlich der AI zu überlassen. In der Praxis heißt das, dass wir uns Zeit für High-Level Reviews und Code Walk-Throughs nehmen müssen. Eine andere Idee ist es, das LLM im Anschluss an die Entwicklung eines neuen Features ein Quiz erstellen zu lassen, das das Feature-bezogene Design-Wissen vermittelt bzw. abfragt.  
